@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Estilos del borde superior con colores de Google */
+.google-btn::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Posiciona el borde en la parte superior */
+    left: 0;
+    right: 0;
+    height: 4px; /* Grosor del borde superior */
+    /* Gradiente de colores background: linear-gradient(to right, red, yellow, green, blue);  */
+    background: linear-gradient(to right, #db4437 25%, #f4b400 25%, #f4b400 50%, #0f9d58 50%, #0f9d58 75%, #4285f4 75%);
+}

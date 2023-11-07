@@ -1,7 +1,10 @@
+import UserInfo from '@/components/UserInfo'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <div className="grid place-items-center h-screen -mt-24">
+      <UserInfo />
+    </div>
   )
 }
